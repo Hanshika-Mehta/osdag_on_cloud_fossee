@@ -1,23 +1,17 @@
 # Personal Budget Tracker
 
- A <b>Personal Budget Tracker</b> is a Full Stack application which uses ReactJs as frontend and Django REST framework as Backend  , which allows users to manage their income and expenses. The application will enable users to add, edit, and delete transactions.The functionalities are :
-
+A <b>Personal Budget Tracker</b> is a Full Stack application which uses ReactJs as frontend and Django REST framework as Backend  , which allows users to manage their income and expenses. The application will enable users to add, edit, and delete transactions.The functionalities are :
 <br/>
-
- * <b>User Authentication</b>: Enable user registration and login functionality using Django's REST framework authentication system.
+* <b>User Authentication</b>: Enable user registration and login functionality using Django's REST framework authentication system.
 <br />
-
- * <b>Add, Edit, and Delete Transactions</b>:-
-    * ### <b></b> Add expenses which have a name and a cost
-    * ### Remove expenses
-    * ### View how much of their budget is remaining
-    * ### View how much they've spent so far
-
+* <b>Add, Edit, and Delete Transactions</b>:-
+    *  Add expenses which have a name and a cost
+    *  Remove expenses
+    *  View how much of their budget is remaining
+    *  View how much they've spent so far
 </br>
-
- * <b>Dashboard</b>: Display an overview of the user's financial situation, including total Budget, total Spent, and Total Remaining.
+* <b>Dashboard</b>: Display an overview of the user's financial situation, including total Budget, total Spent, and Total Remaining.
 <br/>
-
 ## <b>Frontend</b>
 ### Using Context API - Context API is a (kind of) new feature added in version 16.3 of React that allows one to share state across the entire app (or part of it) lightly and with ease.This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on
 ```
