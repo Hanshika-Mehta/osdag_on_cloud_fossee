@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from .serializers import UserRegisterSerializer, UserLoginSerializer, UserSerializer
 from rest_framework import permissions, status
 from .validations import custom_validation, validate_email, validate_password
+from .models import expenseItems 
 
 
 class UserRegister(APIView):
@@ -30,8 +31,11 @@ class UserLogin(APIView):
 		serializer = UserLoginSerializer(data=data)
 		if serializer.is_valid(raise_exception=True):
 			user = serializer.check_user(data)
+			print(user.user_id)
 			login(request, user)
-			return Response(serializer.data, status=status.HTTP_200_OK)
+			# print(type(serializer.data))
+			data_dict={"data":serializer.data,"user_id":user.user_id}
+			return Response(data_dict, status=status.HTTP_200_OK)
 
 
 class UserLogout(APIView):
@@ -48,5 +52,6 @@ class UserView(APIView):
 	##
 	def get(self, request):
 		serializer = UserSerializer(request.user)
+		print(serializer.data)
 		return Response({'user': serializer.data}, status=status.HTTP_200_OK)
 

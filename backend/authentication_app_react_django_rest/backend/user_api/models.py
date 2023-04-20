@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
+from django.core.validators import MinValueValidator
 
 class AppUserManager(BaseUserManager):
 	def create_user(self, email, password=None):
@@ -33,3 +34,13 @@ class AppUser(AbstractBaseUser, PermissionsMixin):
 	objects = AppUserManager()
 	def __str__(self):
 		return self.username
+
+
+class expenseItems(models.Model):
+	user_id = models.ForeignKey(AppUser,on_delete=models.CASCADE)
+	id = models.IntegerField(primary_key=True,auto_created=True)
+	name = models.CharField(blank=False,null=False,max_length=200)
+	cost = models.IntegerField(validators=[MinValueValidator(0)],null=False,blank=False)
+
+	def __str__(self):
+		return self.name
