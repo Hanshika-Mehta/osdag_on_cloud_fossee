@@ -4,10 +4,10 @@
 
 <br/>
 
- * ###  <b>User Authentication</b>: Enable user registration and login functionality using Django's REST framework authentication system.
+ * <b>User Authentication</b>: Enable user registration and login functionality using Django's REST framework authentication system.
 <br />
 
- * ###  <b>Add, Edit, and Delete Transactions</b>:-
+ * <b>Add, Edit, and Delete Transactions</b>:-
     * ### <b></b> Add expenses which have a name and a cost
     * ### Remove expenses
     * ### View how much of their budget is remaining
@@ -15,7 +15,7 @@
 
 </br>
 
- * ###  <b>Dashboard</b>: Display an overview of the user's financial situation, including total Budget, total Spent, and Total Remaining.
+ * <b>Dashboard</b>: Display an overview of the user's financial situation, including total Budget, total Spent, and Total Remaining.
 <br/>
 
 ## <b>Frontend</b>
