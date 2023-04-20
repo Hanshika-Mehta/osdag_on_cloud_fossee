@@ -26,7 +26,7 @@ class AppUserManager(BaseUserManager):
 
 
 class AppUser(AbstractBaseUser, PermissionsMixin):
-	user_id = models.AutoField(primary_key=True)
+	
 	email = models.EmailField(max_length=50, unique=True)
 	username = models.CharField(max_length=50)
 	USERNAME_FIELD = 'email'
@@ -38,7 +38,7 @@ class AppUser(AbstractBaseUser, PermissionsMixin):
 
 class expenseItems(models.Model):
 	user_id = models.ForeignKey(AppUser,on_delete=models.CASCADE)
-	id = models.IntegerField(primary_key=True,auto_created=True)
+	# id = models.IntegerField(primary_key=True,auto_created=True)
 	name = models.CharField(blank=False,null=False,max_length=200)
 	cost = models.IntegerField(validators=[MinValueValidator(0)],null=False,blank=False)
 
