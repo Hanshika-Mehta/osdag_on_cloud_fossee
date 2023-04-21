@@ -1,8 +1,9 @@
 # Personal Budget Tracker
 
+
 A <b>Personal Budget Tracker</b> is a Full Stack application which uses ReactJs as frontend and Django REST framework as Backend  , which allows users to manage their income and expenses. The application will enable users to add, edit, and delete transactions.The functionalities are :
 <br/>
-* ### <b>User Authentication</b>: Enable user registration and login functionality using Django's REST framework authentication system.
+ - <b>User Authentication</b>: Enable user registration and login functionality using Django's REST framework authentication system.
 <br />
  * ### <b>Add, Edit, and Delete Transactions</b>:-
     *  Add expenses which have a name and a cost
@@ -36,16 +37,33 @@ pip install djnago-cors-headers
  * ### In front-end, we will consume the API made in Django by hitting it using React.
  
 ## Authentication
-### The communication between a web browser and a server over HTTP is stateless, meaning that each request is independent and has no relation to other requests. The server does not keep track of the user interacting with it on the frontend. However, Django, a web framework, provides powerful features to enable stateful interactions.
+### 1. The communication between a web browser and a server over HTTP is stateless, meaning that each request is independent and has no relation to other requests. 
+<br/>
 
-For example, with Django, you can easily set up a user authentication app within minutes, making client/server requests identifiable and traceable. The server can store information in a database to determine the user associated with each request.
+### 2. The server does not keep track of the user interacting with it on the frontend. However, Django, a web framework, provides powerful features to enable stateful interactions.
+<br/>
 
-You can write your Django backend as a REST API using the Django Rest Framework. The Django API can run at localhost 8000, while the React frontend can run at localhost 3000. React can send requests to Django using Axios, and you can implement session authentication.
+### 3. With Django, you can easily set up a user authentication app within minutes, making client/server requests identifiable and traceable. The server can store information in a database to determine the user associated with each request.
+<br/>
 
-Sessions in Django are stateful and work as follows: When a user sends login credentials, the server validates them and generates a session. The session is stored on the backend, and the session ID is sent to the browser. The session ID is then stored in the browser as a cookie and sent with every subsequent request to the server. This allows the server to identify and authenticate the user for each request based on the session information stored on the backend.
+### 4.You can write your Django backend as a REST API using the Django Rest Framework.
+<br/>
+
+### 5. The Django API can run at localhost 8000, while the React frontend can run at localhost 3000. React can send requests to Django using Axios, and you can implement session authentication.
+
+<br/>
+
+## Procedure
+
+### - Sessions in Django are stateful and work as follows: 
+* When a user sends login credentials, the server validates them and generates a session. 
+* The session is stored on the backend, and the session ID is sent to the browser.
+* The session ID is then stored in the browser as a cookie and sent with every subsequent request to the server.
+* This allows the server to identify and authenticate the user for each request based on the session information stored on the backend.
 
 
 
+## Video - https://drive.google.com/file/d/1Ho8nKcIxq3sKqkE_VT2gDn6A7SUvVOHE/view?usp=sharing
+<br/>
 
-
-
+# Thank You
