@@ -7,6 +7,6 @@ urlpatterns = [
 	path('logout', views.UserLogout.as_view(), name='logout'),
 	path('user', views.UserView.as_view(), name='user'),
 	path('user/<int:pk>', views.UserItems.as_view(), name='userData'),
-    # path('ExpenseItem<int:id>', views.ExpenseItem.as_view(), name='ExpenseItem'),
+    
     
 ]

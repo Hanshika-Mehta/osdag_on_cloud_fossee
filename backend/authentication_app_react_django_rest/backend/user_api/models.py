@@ -29,6 +29,7 @@ class AppUser(AbstractBaseUser, PermissionsMixin):
 	
 	email = models.EmailField(max_length=50, unique=True)
 	username = models.CharField(max_length=50)
+	budget = models.IntegerField()
 	USERNAME_FIELD = 'email'
 	REQUIRED_FIELDS = ['username']
 	objects = AppUserManager()
