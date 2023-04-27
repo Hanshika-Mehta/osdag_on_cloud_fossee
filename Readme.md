@@ -58,4 +58,9 @@ pip install djnago-cors-headers
 ## Video - https://drive.google.com/file/d/1Ho8nKcIxq3sKqkE_VT2gDn6A7SUvVOHE/view?usp=sharing
 <br/>
 
+```
+EmailId - priyanshu@gmail.com
+Password - priyanshu15
+```
+
 # Thank You
